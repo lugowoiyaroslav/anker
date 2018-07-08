@@ -1,0 +1,151 @@
+.cart__wrap
+	position: relative
+	margin-top: 7.3rem
+	@include mq('tablet')
+		margin-top: 32px
+	img
+		width: 100%
+		@include mq('tablet')
+			display: none
+.cart__wrap-link
+	position: absolute
+	bottom: 10%
+	width: 100%
+	@include mq('tablet')
+		position: relative
+		background: #f2f2f2
+		padding-top: 2rem
+	.container
+		@include row-around
+	a
+		font-size: 1.2rem
+		line-height: 1.4rem
+		padding: 1rem
+		border-radius: 2rem
+		background-color: $white
+		color: $night_rider
+		text-transform: uppercase
+		width: 280px
+		text-align: center
+		transition: all .3s ease-in-out
+		position: relative
+		@include mq('1280')
+			margin-bottom: 2rem
+		@include mq('tablet')
+			width: calc(50% - 2rem)
+		&.active
+			background-color: $pacific_blue
+			color: $white
+			span
+				background-color: $white
+				color: $pacific_blue
+			&:hover
+				span
+					background-color: $white
+					color: $pacific_blue
+		&:hover
+			background-color: $pacific_blue
+			color: $white
+			span
+				background-color: $white
+				color: $pacific_blue
+		&.disable
+			background: #cfcfcf
+			opacity: .5
+			pointer-events: none
+		span
+			position: absolute
+			display: inline-block
+			top: -.8rem
+			right: 12%
+			box-sizing: border-box
+			padding: 0 .2rem
+			min-width: 1.6rem
+			height: 1.6rem
+			line-height: 1.6rem
+			text-align: center
+			background: $pacific_blue
+			color: $white
+			border-radius: 1rem
+			transition: all .3s ease-in-out
+.cart__content
+	h1
+		text-align: center
+	table
+		width: 100%
+		tr
+			@include row-start
+			border-top: 1px solid #f2f2f2
+			@include mq('tablet')
+				flex-direction: column
+				padding-bottom: 1rem
+			&:last-child
+				border-bottom: 1px solid #f2f2f2
+			td
+				width: 50%
+				@include row-start
+				align-items: flex-start
+				@include mq('tablet')
+					width: 100%
+				&:nth-child(even)
+					justify-content: flex-end
+					align-items: center
+					@include mq('tablet')
+						justify-content: center
+				.cart__img
+					width: 8rem
+					img
+						width: 100%
+				.cart__description
+					padding: 0 3rem
+					p
+						font-size: 1.16rem
+						color: $night_rider
+						margin: 0
+					.cart__name
+						font-weight: 700
+						padding: .8rem 0
+						font-size: 1.33rem
+						color: #333
+				.products__quantity
+					border: 1px solid #333
+					border-radius: .5rem
+					width: auto
+					margin: 0
+					.quantity input[type=number]
+						height: 2rem
+						font-size: 1.5rem
+						line-height: normal
+					.quantity input[type=button]
+						font-size: 1.5rem
+						line-height: normal
+					.quantity
+						padding: 0
+				a
+					font-size: 1.5rem
+					line-height: 2.5rem
+					color: #333
+					&:hover
+						color: $fire_brick
+					i
+						margin-left: 2rem
+.button__checkout
+	padding: 2rem
+	margin-top: 2rem
+	text-align: center
+	a
+		padding: 0 3rem
+		display: inline-block
+		text-align: center
+		height: 3.2rem
+		line-height: 3.4rem
+		border-radius: 1.6rem
+		font-size: 1.33rem
+		color: $white
+		background-color: $pacific_blue
+		text-transform: uppercase
+		.line
+			margin: 0 1rem
+	.delivery
+		font-size: 1.16rem
+		color: #333

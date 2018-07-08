@@ -1,0 +1,225 @@
+extends ../layout/main
+
+block content
+	div.product__page
+		div.product__page-main-block
+			.container
+				.product__page-images
+					section.wpis-slider-nav
+						li
+							img(src="static/img/t-1.jpg", alt="")
+						li
+							img(src="static/img/t-1.jpg", alt="")
+						li
+							img(src="static/img/t-1.jpg", alt="")
+						li
+							img(src="static/img/t-1.jpg", alt="")
+						li
+							img(src="static/img/t-1.jpg", alt="")
+						li
+							img(src="static/img/t-1.jpg", alt="")
+						li
+							img(src="static/img/t-1.jpg", alt="")
+						li
+							img(src="static/img/t-1.jpg", alt="")
+					section.wpis-slider-for
+						.zoom
+							a(href="#")
+								img(src="static/img/b-1.jpg", alt="")
+						.zoom
+							a(href="#")
+								img(src="static/img/b-1.jpg", alt="")
+						.zoom
+							a(href="#")
+								img(src="static/img/b-1.jpg", alt="")
+						.zoom
+							a(href="#")
+								img(src="static/img/b-1.jpg", alt="")
+						.zoom
+							a(href="#")
+								img(src="static/img/b-1.jpg", alt="")
+						.zoom
+							a(href="#")
+								img(src="static/img/b-1.jpg", alt="")
+						.zoom
+							a(href="#")
+								img(src="static/img/b-1.jpg", alt="")
+						.zoom
+							a(href="#")
+								img(src="static/img/b-1.jpg", alt="")
+				.product__page-sumary
+					h1 PowerCore Fusion 5000
+					p 2-in-1 Portable Charger and Wall Charger, AC Plug with 5000mAh Capacity, PowerIQ Technology, For iPhone, iPad, Android, Samsung Galaxy and More
+					div.product__reviews.product__reviews-page
+						div.products__list-item-rating
+							span
+									i.iconfont &#58928
+									i.iconfont &#58928
+									i.iconfont &#58928
+									i.iconfont &#58928
+									i.iconfont &#58928
+							span.rating-bg
+								span
+									i.iconfont &#58929
+									i.iconfont &#58929
+									i.iconfont &#58929
+									i.iconfont &#58929
+									i.iconfont &#58929
+						a(class="link__reviews" href="#") 543 Reviews
+					.product__price
+						span $25.99
+					form
+						table
+							tbody
+								tr
+									td.label
+										label Цвет:
+									td.value
+										div.products__list-item-attr
+											<span class="selected" style="background-color:#e2d5b1">Red</span>
+											<span style="background-color:#1e73be">Blue</span>
+											<span style="background-color:#cecece">Gray</span>
+						div.products__quantity
+							div.quantity.buttons_added
+								<input type="button" value="-" class="minus">
+								<input type="number" step="1" min="1" max="" name="quantity" value="1" title="Кол-во" class="input-text qty text" size="4" pattern="[0-9]*" inputmode="numeric">
+								<input type="button" value="+" class="plus">
+							<button class="button" type="submit">В корзину</button>
+	div.product__page-info
+		.container
+			ul.anchor
+				li
+					a(href="#highlights") Особенности
+				li
+					a(href="#related") Рекомендуемые
+				li
+					a(href="#reviews") Отзывы
+				li
+					a(href="#specs") Характеристики
+				li
+					a(href="#downloads") Скачать
+				li
+					a(href="#faq") FAQ
+			div#highlights.product__page-info-highlights
+				p.product__page-info-title Highlights
+				img(src="static/img/i-1.jpg", alt="")
+				img(src="static/img/i-2.jpg", alt="")
+				<p style="font-size:16px"><b>Product Description</b></p>
+				p
+					b
+						| PowerCore 5000
+					| The Ultra-Compact Portable Charger
+				p
+					b
+						| What's in the Box
+				ul
+					li 1 Anker PowerCore 5000 portable charger
+					li 1 Anker PowerCore 5000 portable charger
+					li 1 Anker PowerCore 5000 portable charger
+					li 1 Anker PowerCore 5000 portable charger
+				p
+					b
+						| High-Speed Charging Technology
+					| PowerCore 5000 utilizes two different high-speed charging technologies. PowerIQ provides the fastest possible charge to any device up to 2A. VoltageBoost increases output to overcome cable resistance and ensure a consistent top-speed charge.
+			div#related.product__page-info-related
+				p.product__page-info-title Рекомендуемые
+				section#new-products
+					.slider__leaders-nav
+						a(class="slider__leaders-nav-prev" href="#")
+							i.iconfont &#59069
+						a(class="slider__leaders-nav-next" href="#")
+							i.iconfont &#59068
+					.slider__leaders.slider__leaders-products
+						include ../modules/products-list-two
+			div#reviews.product__page-info-reviews
+				p.product__page-info-title Отзывы
+				div.product__reviews
+					div.products__list-item-rating
+						span
+								i.iconfont &#58928
+								i.iconfont &#58928
+								i.iconfont &#58928
+								i.iconfont &#58928
+								i.iconfont &#58928
+						span.rating-bg
+							span
+								i.iconfont &#58929
+								i.iconfont &#58929
+								i.iconfont &#58929
+								i.iconfont &#58929
+								i.iconfont &#58929
+					span.rating 4.6/5
+				div.block__reviews
+					div.block__reviews-item
+						div.products__list-item-rating
+							span
+									i.iconfont &#58928
+									i.iconfont &#58928
+									i.iconfont &#58928
+									i.iconfont &#58928
+									i.iconfont &#58928
+							span.rating-bg
+								span
+									i.iconfont &#58929
+									i.iconfont &#58929
+									i.iconfont &#58929
+									i.iconfont &#58929
+									i.iconfont &#58929
+						div.block__reviews-item-header
+							span.name Philip K
+							span.date 06-22-2018
+						div.block__reviews-item-text
+							p
+								| It is surprisingly heavy but does last a long while. I typically bring this with me on walks/jogs along the beach and since it keeps my phone charged, i don't have excuses to shorten my distances or turn around. So good and bad, I guess :)
+					div.block__reviews-item
+						div.products__list-item-rating
+							span
+									i.iconfont &#58928
+									i.iconfont &#58928
+									i.iconfont &#58928
+									i.iconfont &#58928
+									i.iconfont &#58928
+							span.rating-bg
+								span
+									i.iconfont &#58929
+									i.iconfont &#58929
+									i.iconfont &#58929
+									i.iconfont &#58929
+									i.iconfont &#58929
+						div.block__reviews-item-header
+							span.name Philip K
+							span.date 06-22-2018
+						div.block__reviews-item-text
+							p
+								| It is surprisingly heavy but does last a long while. I typically bring this with me on walks/jogs along the beach and since it keeps my phone charged, i don't have excuses to shorten my distances or turn around. So good and bad, I guess :)
+			div#specs.product__page-info-specs
+				p.product__page-info-title Характеристики
+				ul
+					li
+						span.params Weight:
+						span 4.7 ounces/134g
+					li
+						span.params Dimensions:
+						span 1.3 x 1.3 x 4.3 in/33x33x108mm
+					li
+						span.params Dimensions:
+						span 1.3 x 1.3 x 4.3 in/33x33x108mm
+					li
+						span.params Dimensions:
+						span 1.3 x 1.3 x 4.3 in/33x33x108mm
+			div#downloads.product__page-info-downloads
+				p.product__page-info-title Мануал & Драйверы
+				ul
+					li
+						a(href="#")
+							i.iconfont &#59054
+							| Мануал
+			div#faq.product__page-info-faq
+				p.product__page-info-title FAQ
+					.faq
+						.faq-content
+							a(href="#") 1. Can I use a USB cable other than the one that came with PowerCore 5000?
+							p Yes, other cables can be used to charge your devices with PowerCore 5000. However, to ensure compatibility and the best possible performance, we strongly recommend using your device’s original (OEM) cable, a third-party certified (MFI) cable, or the included cable.
+						.faq-content
+							a(href="#") 2. What kind of wall charger should I use to charge PowerCore 5000?
+							p You can safely recharge your powercore in 2-3 hours using a 2 amp or higher output charger. Lower output chargers (such as some phone chargers) will not charge as quickly or reliably.

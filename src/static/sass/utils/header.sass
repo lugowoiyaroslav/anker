@@ -1,0 +1,256 @@
+.header__home
+	padding-bottom: 20px
+.header__home-fixed-block
+	position: fixed
+	left: 0
+	top: 0
+	width: 100%
+	z-index: 1000
+.header__home-top-panel
+	width: 100%
+	background-color: $nero
+	@include mq('tablet')
+		display: none
+	.container
+		@include row-between
+		align-items: center
+		a
+			color: $very_light_grey
+			&:hover
+				color: $pacific_blue
+		.phones
+			a
+				margin-left: 1rem
+		ul
+			list-style: none
+			@include row-start
+			margin-right: 1rem
+			li
+				height: 3.2rem
+				background: hsla(0,0%,100%,.1)
+				display: flex
+				align-items: center
+				margin: 0 1px
+				a
+					vertical-align: middle
+					color: #cfcfcf
+					font-size: 1rem
+					padding: 0 1.8rem
+					letter-spacing: 1px
+					position: relative
+					&:hover
+						color: $pacific_blue
+.header__home-menu
+	transition: .4s
+	height: 5.8rem
+	@include mq('tablet')
+		height: 52px
+	&.white
+		background-color: $white
+		ul
+			li
+				a
+					color: $night_rider
+	.container
+		@include row-start
+		@include mq('tablet')
+			@include row-between
+			padding: 0
+.menu
+	@include mq('tablet')
+		display: none
+		background: #00a7e1
+		width: 100%
+		height: 238px
+		overflow: auto
+	@include mq('phone-wide')
+		height: 100%
+	ul
+		@include row-start
+		list-style: none
+		padding-left: 3rem
+		@include mq('tablet')
+			flex-direction: column
+			padding: 2rem
+		li
+			margin: 2.1rem 1rem 0
+			@include mq('tablet')
+				margin: 1rem
+			a
+				font-size: 1.16rem
+				color: $white
+				letter-spacing: 1px
+				position: relative
+				padding-bottom: 2rem
+				&:hover
+					color: $pacific_blue
+					&:after
+						left: 0
+						width: 100%
+				&:after
+					pointer-events: none
+					content: ""
+					position: absolute
+					left: 50%
+					width: 0
+					bottom: 0
+					height: 2px
+					background: #00a7e1
+					transition: .2s
+.menu__dark
+	ul
+		li
+			a
+				color: $night_rider
+				@include mq('tablet')
+					color: $white
+
+.fixed_header
+	background-color: rgba(255, 255, 255, 0.85)
+	@include mq('tablet')
+		background-color: $white
+	.menu
+		ul
+			li
+				a
+					color: $night_rider
+					@include mq('tablet')
+						color: $white
+					&:hover
+						color: $pacific_blue
+.dark
+	.menu
+		ul
+			li
+				a
+					color: $night_rider
+					@include mq('tablet')
+						color: $white
+					&:hover
+						color: $pacific_blue
+.mob__menu
+	display: none
+	@include mq('tablet')
+		display: inline-block
+		font-size: 0
+		margin-left: 1rem
+		&:before
+			content: '\E790'
+			font-family: iconfont
+			color: #333
+			font-size: 2rem
+		&.menu__open
+			&:before
+				content: '\E723'
+				color: $pacific_blue
+.back-home
+	margin: 1.8rem 1rem 0
+	@include mq('tablet')
+		margin: 0
+		position: relative
+		top: 5px
+		right: 1rem
+.logo
+	font-size: 5rem
+	line-height: 3rem
+	color: $pacific_blue
+.header__home-slider
+	position: relative
+	top: 3.2rem
+	@include mq('tablet')
+		top: inherit
+		margin-top: 52px
+	img
+		width: 100%
+	.header__home-slider-item
+		position: relative
+		.slider-item-container
+			position: absolute
+			left: 1rem
+			bottom: 200px
+			width: 100%
+			color: $white
+			@include mq('1100')
+				bottom: 70px
+			@include mq('tablet')
+				position: relative
+				left: 0
+				bottom: 0
+				color: #000
+				text-align: center
+				padding: 2rem 1rem 0
+			&.dark
+				color: #000
+			.slider-item-title
+				font-size: 3.82rem
+				margin: 0
+				@include mq('tablet')
+					font-size: 1.8rem
+					line-height: 2rem
+			.slider-item-text
+				font-size: 1.33rem
+				margin: 0
+				@include mq('tablet')
+					font-size: 1rem
+					margin-top: 1rem
+			.slider-item-button
+				display: inline-block
+				cursor: pointer
+				margin-top: 4rem
+				line-height: 3.2rem
+				font-size: 1.33rem
+				border-radius: 2rem
+				border: 1px solid $white
+				padding: 0 2rem
+				text-transform: uppercase
+				@include mq('tablet')
+					display: none
+			&.dark
+				.slider-item-button
+					border: 1px solid #000
+	.slick-dots
+		@include row-center
+		list-style: none
+		width: 100%
+		position: absolute
+		bottom: 20px
+		@include mq('tablet')
+			bottom: -30px
+		li
+			width: 1rem
+			height: 1rem
+			border: 1px solid $white
+			border-radius: 50%
+			cursor: pointer
+			margin: .4rem
+			position: relative
+			@include mq('tablet')
+				border: 1px solid #000
+			&:hover
+				border: 1px solid $pacific_blue
+			&.slick-active
+				border: none
+				&:before
+					content: "\E696"
+					display: block
+					width: 1rem
+					height: 1rem
+					font-size: 2.5rem
+					font-family: iconfont
+					font-style: normal
+					color: $pacific_blue
+					position: absolute
+					top: -180%
+					left: -90%
+					transition: all .5s
+			button
+				display: none
+		&.dark
+			li
+				border: 1px solid #000
+				&.slick-active
+					border: none
+.content-icon
+	font-size: 3rem
+	position: relative
+	color: $pacific_blue

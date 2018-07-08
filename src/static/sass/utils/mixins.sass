@@ -1,0 +1,43 @@
+@mixin absolute-center
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%,-50%)
+
+@mixin container
+	display: flex
+	flex-direction: column
+
+@mixin row-between
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+
+@mixin row-center
+	display: flex
+	justify-content: center
+	flex-wrap: wrap
+
+@mixin row-around
+	display: flex
+	justify-content: space-around
+	flex-wrap: wrap
+
+@mixin row-start
+	display: flex
+	justify-content: flex-start
+
+@mixin row-end
+	display: flex
+	justify-content: flex-end
+	flex-wrap: wrap
+
+$breakpoints: ("phone": 400px, "phone-wide": 480px, "phablet": 560px, "tablet-small": 640px, "tablet": 768px, "tablet-wide": 1024px, "1280": 1280px, "1100": 1100px)
+
+=mq($width, $type: max)
+	@if map_has_key($breakpoints,$width)
+		$width: map_get($breakpoints,$width)
+		@if $type == max
+			$width: $width - 1px
+		@media only screen and (#{$type}-width: $width)
+			@content

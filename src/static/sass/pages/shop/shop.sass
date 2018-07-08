@@ -1,0 +1,223 @@
+.shop__description-text
+	position: absolute
+	bottom: 0
+	left: 50%
+	transform: translate(-50%)
+	width: 100%
+	max-width: 1200px
+	@include mq('tablet')
+		position: relative
+		left: 0
+		transform: translate(0)
+.shop__description-wrap
+	display: inline-block
+	padding: 2rem 3rem
+	margin: 0 0 3rem
+	background: $white
+	width: 50%
+	max-width: 475px
+	@include mq('tablet')
+		width: 100%
+		background: transparent
+		margin: 0
+	p
+		font-size: 1.2rem
+		margin: 0 0 1rem
+		color: $night_rider
+.category__nav
+	position: relative
+	top: -7px
+	margin-bottom: 92px
+	@include mq('tablet')
+		margin-bottom: 1rem
+	ul
+		list-style: none
+		max-width: 1200px
+		margin: 0 auto
+		@include mq('tablet')
+			white-space: nowrap
+		li
+			display: inline-block
+			vertical-align: top
+			white-space: nowrap
+			@include mq('tablet')
+				display: block
+			a
+				font-size: 1.2rem
+				color: $night_rider
+				position: relative
+				padding: 2rem
+				display: block
+				&:after
+					content: ""
+					display: none
+					position: absolute
+					z-index: 1
+					border: .5rem solid transparent
+					border-bottom: 0
+					border-top-color: #333
+					top: 100%
+					left: 50%
+					transform: translate(-50%)
+			.sub-menu
+				background-color: $white
+				position: absolute
+				left: 0
+				margin-top: 0
+				width: 100%
+				display: none
+				@include mq('tablet')
+					position: relative
+			&.current-cat
+				.sub-menu
+					display: block
+#anker
+	padding: 0
+	ul
+		li
+			&.current-cat
+				background-color: $pacific_blue
+				a
+					color: $white
+					&:after
+						content: ""
+						display: block
+						border-top-color: $pacific_blue
+				ul
+					li
+						a
+							color: $night_rider
+							&:after
+								content: ""
+								display: none
+#eufy
+	padding: 0
+	ul
+		li
+			&.current-cat
+				background-color: $light_sea_green
+				a
+					color: $white
+					&:after
+						content: ""
+						display: block
+						border-top-color: $light_sea_green
+				ul
+					li
+						a
+							color: $night_rider
+							&:after
+								content: ""
+								display: none
+#roav
+	padding: 0
+	ul
+		li
+			&.current-cat
+				background-color: $tangerine
+				a
+					color: $white
+					&:after
+						content: ""
+						display: block
+						border-top-color: $tangerine
+				ul
+					li
+						a
+							color: $night_rider
+							&:after
+								content: ""
+								display: none
+#zolo
+	padding: 0
+	ul
+		li
+			&.current-cat
+				background-color: $night_rider
+				a
+					color: $white
+					&:after
+						content: ""
+						display: block
+						border-top-color: $night_rider
+				ul
+					li
+						a
+							color: $night_rider
+							&:after
+								content: ""
+								display: none
+#nebula
+	padding: 0
+	ul
+		li
+			&.current-cat
+				background-color: $fire_brick
+				a
+					color: $white
+					&:after
+						content: ""
+						display: block
+						border-top-color: $fire_brick
+				ul
+					li
+						a
+							color: $night_rider
+							&:after
+								content: ""
+								display: none
+.section__anker
+	h3
+		i
+			font-size: 5rem
+			line-height: .7
+			font-weight: 400
+			color: $pacific_blue
+	h5
+		font-size: 1.4rem
+		margin: 0 0 1rem
+		color: $pacific_blue
+.section__eufy
+	h3
+		i
+			font-size: 5rem
+			line-height: .7
+			font-weight: 400
+			color: $light_sea_green
+	h5
+		font-size: 1.4rem
+		margin: 0 0 1rem
+		color: $light_sea_green
+.section__roav
+	h3
+		i
+			font-size: 5rem
+			line-height: .7
+			font-weight: 400
+			color: $tangerine
+	h5
+		font-size: 1.4rem
+		margin: 0 0 1rem
+		color: $tangerine
+.section__zolo
+	h3
+		i
+			font-size: 5rem
+			line-height: .7
+			font-weight: 400
+			color: $night_rider
+	h5
+		font-size: 1.4rem
+		margin: 0 0 1rem
+		color: $night_rider
+.section__nebula
+	h3
+		i
+			font-size: 5rem
+			line-height: .7
+			font-weight: 400
+			color: $fire_brick
+	h5
+		font-size: 1.4rem
+		margin: 0 0 1rem
+		color: $fire_brick

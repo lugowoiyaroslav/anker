@@ -1,0 +1,34 @@
+extends ../layout/main
+
+block content
+	div.categories__wrap
+		div.categories__description
+			img(src="static/img/cat-1.png", alt="")
+			.container
+				div.categories__description-text.block__dark.position__right
+					h3 Portable Power
+					h5 Setting the industry benchmark for charging on the go.
+		div.container
+			p.category__title Power Banks
+		div.categories__description
+			img(src="static/img/cat-2.png", alt="")
+			.container
+				div.categories__description-text.block__white.position__right
+					h3 Pocket-Sized Portable Chargers
+					h5 5000mAh | 1-2 Phone Charges
+					span
+					<p>Precision-designed for unrivaled portability.<br>Stay charged anywhere life takes you.</p>
+		section.products__list.products__list-main
+			.container
+				include ../modules/products-list
+		div.categories__description.transform
+			img(src="static/img/cat-3.png", alt="")
+			.container
+				div.categories__description-text.block__white.position__left
+					h3 Pocket-Sized Portable Chargers
+					h5 5000mAh | 1-2 Phone Charges
+					span
+					<p>Precision-designed for unrivaled portability.<br>Stay charged anywhere life takes you.</p>
+		section.products__list.products__list-main
+			.container
+				include ../modules/products-list

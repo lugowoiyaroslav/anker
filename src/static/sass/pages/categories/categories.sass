@@ -1,0 +1,263 @@
+.categories__wrap
+	position: relative
+	margin-top: 7.3rem
+	background: #f2f2f2
+	@include mq('tablet')
+		margin-top: 2.4rem
+.categories__wrap-about
+	@include mq('tablet')
+		margin-top: 0
+.categories__description
+	width: 100%
+	position: relative
+	float: left
+	@include mq('tablet')
+		max-width: 100%
+		overflow: hidden
+	img
+		width: 100%
+		@include mq('tablet')
+			width: 200%
+			transform: translate(0)
+	&.transform
+		img
+			@include mq('tablet')
+				width: 200%
+				transform: translate(-50%)
+	h3
+		font-size: 2.2rem
+		margin: .5vw
+		line-height: 1.2
+		font-weight: 700
+		@include mq('tablet')
+			font-size: 1.33rem
+	h5
+		font-size: 1.33rem
+		margin: .5vw 0
+		line-height: 1.2
+		font-weight: 700
+		@include mq('tablet')
+			font-size: 1.16rem
+	span
+		display: inline-block
+		width: 4rem
+		border-bottom-width: 1px
+		border-bottom-style: solid
+		filter: opacity(.8)
+		margin: .5vw 0
+.shop__wrap
+	.categories__description
+		@include mq('tablet')
+			max-width: 100%
+			overflow: hidden
+		img
+			@include mq('tablet')
+				width: 200%
+				transform: translate(-50%)
+.position__right
+	position: absolute
+	width: 50%
+	left: 50%
+	top: 50%
+	transform: translateY(-50%)
+	text-align: center
+	@include mq('tablet')
+		position: relative
+		width: 100%
+		left: 0
+		top: 0
+		transform: translateY(0)
+.position__left
+	position: absolute
+	width: 50%
+	right: 50%
+	top: 50%
+	transform: translateY(-50%)
+	text-align: center
+	@include mq('tablet')
+		position: relative
+		width: 100%
+		left: 0
+		top: 0
+		transform: translateY(0)
+.block__dark
+	color: #000
+	@include mq('tablet')
+		padding: 1rem
+.block__white
+	color: $white
+	@include mq('tablet')
+		color: #000
+		padding: 1rem
+.category__title
+	margin: 3rem 0 0
+	text-align: center
+	color: $night_rider
+	font-size: 1.66rem
+.products__list-main
+	padding-top: 1rem
+	clear: both
+	.container
+		display: flex
+		flex-wrap: wrap
+		.products__list-item
+			width: 25%
+			padding: 0 0 2rem 0
+			@include mq('1100')
+				width: 33.33%
+			@include mq('tablet')
+				width: 50%
+			@include mq('phone-wide')
+				width: 100%
+			.products__list-item-link
+				width: 92%
+				margin: 0 auto
+.careers__wrap
+	background: $white
+	text-align: center
+	.categories__description
+		margin-bottom: 5rem
+	h1,h3
+		margin: 0
+		font-size: 2.2rem
+		line-height: 3rem
+		padding: 1.5rem
+		position: relative
+		&:after
+			position: absolute;
+			content: ""
+			left: 50%
+			bottom: 0
+			transform: translate(-50%)
+			width: 5rem
+			border-bottom: 1px solid $very_light_grey
+	p
+		color: $night_rider
+		@include mq('tablet')
+			padding: 0 1rem
+	img
+		width: 100%
+.careers__description
+	@include mq('tablet')
+		width: 100%
+		overflow: hidden
+	img
+		width: 100%
+		@include mq('tablet')
+			width: 200%
+			transform: translate(-50%)
+			left: 50%
+			position: relative
+.careers__col-3
+	@include row-start
+	margin: 5rem auto
+	@include mq('tablet')
+		flex-wrap: wrap
+		margin: 0 auto
+.careers__description-block
+	padding: 1rem
+	width: 33.33%
+	@include mq('tablet')
+		width: 100%
+		padding: 0
+	img
+		width: 100%
+	h3
+		margin: 0
+		font-size: 2.2rem
+		line-height: 3rem
+		padding: 1.5rem
+		position: relative
+		@include mq('1280')
+			font-size: 1.2rem
+		@include mq('tablet')
+			font-size: 1.66rem
+		&:after
+			position: absolute;
+			content: ""
+			left: 50%
+			bottom: 0
+			transform: translate(-50%)
+			width: 5rem
+			border-bottom: 1px solid $very_light_grey
+	p
+		font-size: 1.16rem
+		line-height: 1.6rem
+		padding: 1rem
+.join
+	margin: 5rem 0
+	a
+		width: 20rem
+		background: #00a7e1
+		color: #fff
+		height: 3.2rem;
+		line-height: 3.4rem;
+		border-radius: 1.6rem
+		font-size: 1.33rem
+		text-align: center
+		display: inline-block
+		text-transform: uppercase
+.contacts__block
+	background: #f2f2f2
+	padding: 5rem 0
+	margin: 5rem 0
+	width: 100%
+	@include mq('tablet')
+		margin: 5rem 0 0
+.contacts__block
+	form
+		p:nth-child(1),p:nth-child(2),p:nth-child(3)
+			display: inline-block
+			width: 33%
+			padding: 1rem
+			@include mq('tablet')
+				width: 100%
+				padding: 0 1rem
+			input
+				width: 100%
+				height: 2rem
+				line-height: 2rem
+				padding: 2rem
+				border-radius: 0.3rem
+				border: 2px solid transparent
+		p:nth-child(4)
+			width: 100%
+			padding: 1rem
+		textarea
+			width: 100%
+			padding: 2rem
+			border-radius: 0.3rem
+			border: 2px solid transparent
+		p:nth-child(5)
+			input
+				width: 20rem
+				background: $pacific_blue
+				color: #fff
+				height: 3.2rem;
+				line-height: 3.4rem;
+				border-radius: 1.6rem
+				font-size: 1.33rem
+				text-align: center
+				display: inline-block
+				text-transform: uppercase
+				border: none
+				transition: .4s
+				cursor: pointer
+				&:hover
+					transform: translateY(-1px)
+					box-shadow: 0 3px 10px rgba(0,0,0,.25)
+					animation-fill-mode: forwards
+		input,textarea
+			font-size: 1.5rem
+			transition: border .3s
+			@include placeholder
+				color: $very_light_grey
+			&:focus
+				@include placeholder
+					opacity: 0
+		input[type=text]:focus,input[type=tel]:focus,input[type=email]:focus,textarea:focus
+			border: 2px solid $pacific_blue
+.mobile__h3
+	text-align: center
+	margin-top: 2rem!important
+	display: block

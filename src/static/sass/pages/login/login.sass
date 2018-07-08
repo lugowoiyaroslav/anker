@@ -1,0 +1,61 @@
+.auth__wrap
+	position: relative
+	width: 100%
+	background-image: url(../img/login__bg.jpg)
+	background-repeat: no-repeat
+	background-position: 0 50%
+	background-size: cover
+	margin-top: 7rem
+	@include row-center
+	padding: 4% 0
+	@include mq('tablet')
+		margin-top: 32px
+.auth__wrap-block
+	display: flex
+	overflow: hidden
+	background: #fff
+	@include mq('tablet')
+		flex-direction: column-reverse
+.auth__wrap-block-img
+	img
+		float: left
+		width: 100%
+.auth__wrap-block-form
+	padding: 1.5rem
+	width: 286px
+	@include mq('tablet')
+		width: 100%
+	h2
+		text-align: center
+	form
+		input[type=text],input[type=email],input[type=password]
+			border-radius: 1.6rem
+			background: #fff
+			width: 100%
+			margin: 0
+			padding: 0 1.2rem
+			color: #333
+			line-height: normal
+			border: 1px solid #e1e1e1
+			height: 3.2rem
+		label
+			padding: 0 0 0 .7rem
+		a
+			color: #00a7e1
+			text-decoration: none
+.woocommerce-form-login
+	.woocommerce-Button.button
+		display: inline-block
+		text-align: center
+		border: none
+		height: 3.2rem
+		width: 50%
+		line-height: 3.2rem
+		border-radius: 1.6rem
+		text-decoration: none
+		font-size: 1.33rem
+		cursor: pointer
+		transition: .2s
+		white-space: nowrap
+		color: #fff
+		background-color: #00a7e1

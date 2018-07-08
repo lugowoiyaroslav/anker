@@ -1,0 +1,52 @@
+extends ../layout/main-home
+
+block content
+	section#leaders.products__list
+		.container.slider__leaders-header
+			h2 Лидеры продаж
+			.slider__leaders-nav
+				a(class="slider__leaders-nav-prev" href="#")
+					i.iconfont &#59069
+				a(class="slider__leaders-nav-next" href="#")
+					i.iconfont &#59068
+		.container.slider__leaders
+			include ../modules/products-list
+	section#new-products.products__list
+		.container.slider__leaders-header
+			h2 Лидеры продаж
+			.slider__leaders-nav
+				a(class="slider__leaders-nav-prev" href="#")
+					i.iconfont &#59069
+				a(class="slider__leaders-nav-next" href="#")
+					i.iconfont &#59068
+		.container.slider__leaders
+			include ../modules/products-list
+	section.banners.container
+		div.banners__header
+			div.banners__header-wrap
+				span.banners__header-name Заголовок баннеры
+		div.banners__wrap
+			.banners__block
+				a(href="#")
+					div.banners__block-title
+						p.banners-title PowerHouse
+						p.banners-text The Ultimate Portable Power Supply
+					img(src="static/img/banner-1.jpg", alt="")
+			.banners__block
+				a(href="#")
+					div.banners__block-title
+						p.banners-title PowerHouse
+						p.banners-text The Ultimate Portable Power Supply
+					img(src="static/img/banner-2.jpg", alt="")
+			.banners__block
+				a(href="#")
+					div.banners__block-title
+						<p class="banners-title" style="color:#fff">PowerHouse</p>
+						<p class="banners-text" style="color:#fff">The Ultimate Portable Power Supply</p>
+					img(src="static/img/banner-3.jpg", alt="")
+			.banners__block
+				a(href="#")
+					div.banners__block-title
+						<p class="banners-title" style="color:#fff">PowerHouse</p>
+						<p class="banners-text" style="color:#fff">The Ultimate Portable Power Supply</p>
+					img(src="static/img/banner-4.jpg", alt="")

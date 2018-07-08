@@ -1,0 +1,109 @@
+.header__home-about
+	background: url('../img/a-1.jpg') no-repeat 50% 100%
+	padding: 9% 5%
+	color: $white
+	text-align: center
+	position: relative
+	top: 9rem
+	@include mq('tablet')
+		top: 0
+		margin-top: 52px
+		padding: 30% 5%
+	h1
+		font-size: 3.82rem
+		line-height: 1.2
+		margin: 0
+		@include mq('tablet')
+			font-size: 2.2rem
+	.line
+		display: inline-block
+		width: 5rem
+		height: 0
+		border-top: 1px solid #fff
+		margin: 1.5rem 0 2rem
+	p
+		font-size: 1.33rem
+		line-height: 1.4
+		margin: 0
+		@include mq('tablet')
+			font-size: 1.16rem
+.header__bottom-logo
+	@include row-around
+	margin: 4% auto 0
+	a
+		color: $white
+		i
+			font-size: 5.2rem
+			line-height: 2rem
+			@include mq('tablet')
+				font-size: 2.2rem
+.categories__wrap-about
+	background: $white
+	margin-bottom: 4.5rem
+	.categories__description
+		float: none
+		padding: 4% 3% 0
+		@include mq('1280')
+			.container
+				position: relative
+		.shop__description-text
+			@include mq('1280')
+				padding: 0 2rem
+			@include mq('tablet')
+				padding: 0
+		@include mq('tablet')
+			padding: 0
+			img
+				width: 100%
+
+	.shop__description-wrap
+		max-width: inherit
+		width: 100%
+		background: rgba(255, 255, 255, 0.9);
+		@include row-between
+		align-items: center
+		padding: 0 3rem
+		border-bottom: 4px solid $pacific_blue
+		@include mq('1100')
+			padding: 0 1rem
+		@include mq('tablet')
+			display: block
+		img
+			width: 210px
+			@include mq('1280')
+				width: 20%
+			@include mq('tablet')
+				width: 210px
+				margin: 0 auto
+				display: block
+		p
+			max-width: 700px
+			margin: 0
+			@include mq('1280')
+				max-width: 60%
+			@include mq('tablet')
+				max-width: 100%
+				text-align: center
+			a
+				text-transform: uppercase
+				color: $night_rider
+				display: block
+				margin-top: 5%
+				&:hover
+					color: $pacific_blue
+		h3
+			@include mq('1280')
+				margin: 0
+				width: 20%
+				i
+					@include mq('1280')
+						font-size: 4rem
+	.section__eufy
+		.shop__description-wrap
+			border-bottom: 4px solid $light_sea_green
+	.section__nebula
+		.shop__description-wrap
+			border-bottom: 4px solid $fire_brick
+	.section__roav
+		.shop__description-wrap
+			border-bottom: 4px solid $tangerine

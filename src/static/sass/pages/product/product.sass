@@ -1,0 +1,412 @@
+.product__page
+	margin: 86px 0 0
+	padding: 100px 0
+	background-color: #f2f2f2
+	@include mq('tablet')
+		margin: 32px 0 0
+		padding: 0
+		background-color: $white
+.product__page-main-block
+	@include mq('tablet')
+		margin-bottom: 3rem
+	.container
+		@include row-between
+.product__page-images
+	width: 52%
+	padding: 0 5% 0 1rem
+	@include row-between
+	@include mq('tablet-wide')
+		width: 45%
+		padding: 0 0 0 1rem
+	@include mq('tablet')
+		width: 100%
+		padding: 0 1rem
+	p
+		@include mq('tablet')
+			margin: 0
+.wpis-slider-nav
+	display: inline-block
+	vertical-align: top
+	width: 78px
+	@include mq('tablet-wide')
+		display: none
+	.slick-slide
+		list-style: none
+		img
+			border: 3px solid transparent
+			transition: border .3s ease-out
+			width: 70px
+			height: 77px
+			object-fit: cover
+	.slick-current
+		img
+			border: 3px solid #00a7e1
+.wpis-slider-for
+	display: inline-block
+	width: calc(100% - 70px - 14px)
+	position: relative
+	max-height: 470px
+	@include mq('tablet')
+		width: 100%
+		max-width: inherit
+	img
+		width: 100%
+		max-height: 470px
+		object-fit: cover
+	.slick-arrow
+		@include absolute-center
+		z-index: 100
+		cursor: pointer
+	.slick-prev
+		left: 25px
+		width: 50px
+		height: 70px
+		border: 0
+		background-color: rgba(0, 0, 0, 0.3)
+		font-size: 0
+		&:before
+			content: "\E6BD"
+			display: block
+			font-size: 2rem
+			color: $white
+			font-family: iconfont
+	.slick-next
+		right: -25px
+		left: inherit
+		width: 50px
+		height: 70px
+		border: 0
+		background-color: rgba(0, 0, 0, 0.3)
+		font-size: 0
+		&:before
+			content: "\E6BC"
+			display: block
+			font-size: 2rem
+			color: $white
+			font-family: iconfont
+.product__page-sumary
+	width: 48%
+	padding: 0 2%
+	@include mq('tablet-wide')
+		width: 53%
+	@include mq('tablet')
+		width: 100%
+		padding: 0 1rem
+		margin-top: 1rem
+
+	h1
+		font-size: 2rem
+		line-height: 3rem
+		padding-bottom: 1rem
+		font-weight: 700
+		margin: 0
+	p
+		font-size: 1.16rem
+		line-height: 1.6rem
+		padding-bottom: 1rem
+		color: $night_rider
+		margin: 0
+	.product__price
+		font-size: 2.2rem
+		line-height: 3rem
+		padding: 1rem 0
+	.link__reviews
+		font-size: 1rem
+		font-weight: 700
+		padding-left: 1rem
+		line-height: 2.4rem
+		height: 2.4rem
+		color: $night_rider
+		&:hover
+			color: $pacific_blue
+.product__reviews-page
+	text-align: left
+	padding-bottom: 1rem
+	span
+		i
+			font-size: 1.5rem
+.products__quantity
+	position: relative
+	width: 100%
+	background: #fff
+	border-radius: 1.5rem
+	max-width: 32rem
+	border: 1px solid #f2f2f2
+	margin: 1.5rem 0 0
+.quantity
+	display: table
+	padding: 0 1rem
+	border-radius: 1.5rem
+	input[type=button]
+		border: none
+		background: transparent
+		font-size: 2rem
+		width: 3rem
+		line-height: 3rem
+		color: rgba(51, 51, 51, 0.85)
+		cursor: pointer
+	input[type=number]
+		border: none
+		background: transparent
+		font-size: 2rem
+		height: 3rem
+		line-height: 3rem
+		color: rgba(51, 51, 51, 0.85)
+		display: table-cell
+		width: 4rem
+		text-align: center
+.product__page-sumary
+	form
+		.label
+			position: relative
+			left: 0
+			top: 2px
+			padding-right: 1rem
+			font-size: 1.16rem
+			line-height: 3.5rem
+	.button
+		position: absolute
+		top: 0
+		left: 12rem
+		right: 0
+		transition: .4s
+		background: $pacific_blue
+		color: #fff
+		width: 240px
+		height: 3.2rem
+		line-height: 3.2rem
+		border-radius: 1.6rem
+		font-size: 1.33rem
+		border: none
+		text-align: center
+		cursor: pointer
+		@include mq('tablet')
+			padding: 0 3rem
+			left: inherit
+			width: auto
+		&:hover
+			transform: translateY(-1px)
+			animation-fill-mode: forwards
+			box-shadow: 0 3px 10px rgba(0,0,0,.25)
+	.products__list-item-attr
+		span
+			width: 1.5rem
+			height: 1.5rem
+			box-sizing: border-box
+			padding: 2px
+			margin: 0 7px
+			position: relative
+			border: none
+			cursor: pointer
+			&:before
+				position: absolute
+				width: 2rem
+				display: block
+				height: 2rem
+				border-radius: 50%
+				left: -5px
+				top: -5px
+				content: ''
+				background: transparent
+				border: 2px solid #f2f2f2
+			&.selected:before
+				border: 2px solid $pacific_blue
+.anchor
+	list-style: none
+	@include row-center
+	li
+		a
+			font-size: 1.16rem
+			line-height: 4rem
+			color: $night_rider
+			position: relative
+			padding: 0 5rem
+			@include mq('1280')
+				padding: 0 1rem
+			&.active
+				color: $pacific_blue
+			&:after
+				position: absolute
+				top: 50%
+				right: 0
+				transform: translateY(-50%)
+				content: ""
+				height: 1rem
+				width: 1px
+				background: #cfcfcf
+			&:hover
+				color: $pacific_blue
+		&:last-child
+			a:after
+				content: ''
+				display: none
+	&.fixed_header
+		width: 100%
+		position: fixed
+		left: 0
+		top: 0
+		box-shadow: 1px 0 5px #f2f2f2
+		z-index: 1000
+.product__page-info-title
+	text-align: center
+	font-size: 1.66rem
+	padding: 3rem 0
+	line-height: 3rem
+	margin: 0
+.slider__leaders-products
+	.line
+		position: absolute
+		top: -1px
+		left: 50%
+		z-index: 5
+		width: 0
+		height: 3px
+		overflow: hidden
+		background: $pacific_blue
+		transition: .2s
+	a:hover
+		transform: translateY(0)
+		.line
+			left: 0
+			width: 100%
+.product__page-info
+	padding-bottom: 3rem
+	#new-products
+		position: relative
+		.slider__leaders-nav-prev
+			font-size: 2rem
+			position: absolute
+			top: 50%
+			left: 0
+			transform: translate(-50%,-50%)
+			z-index: 100
+			color: $very_light_grey
+			@include mq('1280')
+				position: relative
+				transform: translate(0,0)
+			&:hover
+				color: $pacific_blue
+		.slider__leaders-nav-next
+			font-size: 2rem
+			position: absolute
+			top: 50%
+			left: 100%
+			transform: translate(-50%,-50%)
+			z-index: 100
+			color: $very_light_grey
+			@include mq('1280')
+				position: relative
+				transform: translate(0,0)
+				left: 0
+			&:hover
+				color: $pacific_blue
+		.products__list-item-name
+			h3
+				font-weight: 700
+	p
+		color: $night_rider
+		b
+			font-weight: 700
+			display: block
+		@include mq('1280')
+			margin-left: 1rem
+			margin-right: 1rem
+.product__page-info-highlights
+	ul
+		padding-left: 1.4rem
+		color: 1.4rem
+		@include mq('1280')
+			margin-left: 1rem
+	img
+		width: 100%
+.product__page-info-specs
+	ul
+		@include mq('1280')
+			margin-left: 1rem
+		list-style: none
+		li
+			margin: 1.5rem 0
+			color: $night_rider
+			.params
+				font-weight: 700
+				margin-right: 5px
+.product__page-info-downloads
+	ul
+		@include mq('1280')
+			margin-left: 1rem
+		list-style: none
+		li
+			margin: 1.5rem 0
+			a
+				color: $night_rider
+				&:hover
+					color: $pacific_blue
+				i
+					font-size: 1.5rem
+					margin-right: .5rem
+.faq
+	.faq-content
+		padding: 0 .5rem .5rem .5rem
+		&:hover
+			background-color: #f2f2f2
+		p
+			display: none
+			padding-left: 20px
+			font-weight: 700
+			color: #545454
+		a
+			font-size: 1.16rem
+			color: #545454
+			font-weight: 700
+			display: block
+			line-height: 2.6
+			@include mq('tablet')
+				position: relative
+				padding-left: 2rem
+				line-height: 2rem
+			&:before
+				content: '\E727'
+				display: inline-block
+				font-family: iconfont
+				color: $night_rider
+				font-size: 1.5rem
+				margin-right: 5px
+				position: relative
+				top: 2px
+				@include mq('tablet')
+					top: 0
+					left: 0
+					position: absolute
+			&.active:before
+				content: '\E729'
+.product__page-info-reviews
+	.product__page-info-title
+		padding: 3rem 0 0
+	.products__list-item-rating
+		@include mq('1280')
+			margin-left: 1rem
+		span
+			i
+				font-size: 1.5rem
+	.rating
+		display: block
+		font-size: 1.33rem
+		color: $night_rider
+.block__reviews-item
+	padding: 1.4rem 0
+	color: #666
+	font-weight: 700
+	font-size: 1.16rem
+	.products__list-item-rating
+		span
+			i
+				font-size: 1rem
+	.block__reviews-item-header
+		padding-top: .5rem
+		@include mq('1280')
+			margin-left: 1rem
+	.name
+		margin-right: 2rem
+.block__reviews-item-text
+	p
+		color: #666

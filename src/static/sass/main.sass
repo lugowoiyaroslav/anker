@@ -1,0 +1,52 @@
+@import 'utils/fonts'
+@import 'utils/vars.sass'
+@import 'utils/mixins.sass'
+@import "libs.sass"
+@import "normalize"
+@import 'utils/grid.sass'
+@import 'utils/header.sass'
+@import 'utils/products-list.sass'
+@import 'utils/footer.sass'
+html
+	-webkit-font-smoothing: antialiased
+	font-size: 12px
+	font-family: 'Roboto-Regular'
+	line-height: 1.83
+
+body
+	padding: 0
+	margin: 0
+	overflow-x: hidden
+*
+	outline: none
+	box-sizing: border-box
+a
+	text-decoration: none
+	transition: color .3s ease-in-out
+ul
+	margin: 0
+	padding: 0
+h1,h2,h3,h4,h5
+	font-weight: normal
+.iconfont
+	font-family: iconfont
+	font-style: normal
+	-webkit-font-smoothing: antialiased
+	-webkit-text-stroke-width: .2px
+
+// Главная страница
+@import 'pages/index/index.sass'
+// Категории
+@import 'pages/categories/categories.sass'
+// Каталог
+@import 'pages/shop/shop.sass'
+// Страница продукта
+@import 'pages/product/product.sass'
+// Страница о нас
+@import 'pages/about/about.sass'
+// Страница новости
+@import 'pages/news/news.sass'
+// Личный раздел
+@import 'pages/profile/profile.sass'
+// Логин
+@import 'pages/login/login.sass'

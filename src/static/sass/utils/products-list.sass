@@ -1,0 +1,127 @@
+#leaders
+	position: relative
+	top: 19px
+.products__list
+	background-color: #f2f2f2
+.products__list-item
+	display: inline-block
+	padding: 0 2rem 2rem 0
+	a
+		display: block
+		text-decoration: none
+		background: #fff
+		cursor: pointer
+		transition: .6s
+		&:hover
+			transform: translateY(-4px)
+			animation-fill-mode: forwards
+			box-shadow: 0 4px 50px rgba(0,0,0,.25)
+.slick-slider
+	.products__list-item
+		padding: 0 0 2rem 0
+	.products__list-item-link
+		position: relative
+		width: 96%
+		margin: 0 auto
+
+#leaders,#new-products
+	a:hover
+		box-shadow: none
+.products__list-item-img
+	position: relative
+	overflow: hidden
+	text-align: center
+	.dop__img
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		opacity: 0
+		transition: 1.2s
+	.open-photo
+		opacity: 1
+.products__list-item-attr
+	@include row-center
+	padding-top: 1rem
+	span
+		height: 1rem
+		width: 1rem
+		border-radius: 50%
+		border: 2px solid #cfcfcf
+		text-indent: -9999px
+		box-sizing: content-box
+		margin: 0 3px
+		display: inline-block
+.products__list-item-name
+	@include row-center
+	line-height: 1.6rem
+	min-height: 3.1rem
+	margin: .5rem 1.5rem
+	h3
+		font-size: 1.16rem
+		font-weight: 700
+		color: #333
+.products__list-item-description
+	@include row-center
+	p
+		font-size: 1rem
+		line-height: 1.4rem
+		min-height: 2.8rem
+		margin: .5rem 1.5rem
+		text-align: center
+		color: #666
+.products__list-item-price
+	@include row-center
+	span
+		font-size: 1.16rem
+		padding: 0 8px 1rem
+		color: #333
+		font-weight: 700
+.slider__leaders-header
+	@include row-between
+	align-items: center
+	h2
+		font-size: 2.5rem
+		color: $night_rider
+		margin-left: .6rem
+		@include mq('tablet')
+			font-size: 2rem
+	a
+		width: 2.8rem
+		height: 2.8rem
+		background-color: $nero
+		display: inline-block
+		border-radius: 3px
+		text-align: center
+		transition: background-color .3s ease-in-out
+		&:nth-child(1)
+			margin-right: 5px
+		&:hover
+			background-color: $pacific_blue
+		i
+			line-height: 2.8rem
+			color: $white
+.slider__leaders-nav
+	margin-right: .4rem
+.products__list-item-rating
+	vertical-align: top
+	display: inline-block
+	position: relative
+	span
+		white-space: nowrap
+		float: left
+		i
+			line-height: 2rem
+			font-size: 1rem
+			display: inline-block
+			color: #fec93b
+			padding: 1px
+.rating-bg
+	position: absolute
+	top: 0
+	left: 0
+	bottom: 0
+	overflow: hidden
+	text-align: left
+.product__reviews
+	text-align: center

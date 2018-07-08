@@ -1,0 +1,311 @@
+.footer
+	width: 100%
+	background-color: $nero
+	color: $very_light_grey
+	min-height: 300px
+.footer__top
+	@include row-between
+	padding-bottom: 2rem
+	@include mq('tablet')
+		width: 100%
+	h5
+		display: inline-block
+		font-size: 1.33rem
+		border-bottom: 1px solid #686868
+		margin-bottom: 1.4em
+		color: $white
+		@include mq('tablet')
+			display: block
+			margin: 0
+			padding: .5rem
+			&:after
+				content: '\E727'
+				font-family: iconfont
+				color: $white
+				float: right
+				font-size: 1.3rem
+				transition: .5s
+			&.active
+				&:after
+					transform: rotate(225deg)
+
+	ul
+		list-style: none
+		@include mq('tablet')
+			display: none
+		li
+			margin-bottom: 5px
+			a
+				color: $very_light_grey
+				&:hover
+					color: $pacific_blue
+			@include mq('tablet')
+				margin-bottom: 1px
+				background: #444
+				padding: .5rem
+.footer__top-left-block
+	@include row-between
+	@include mq('tablet')
+		width: 100%
+.footer__top-menu
+	margin-left: 1rem
+	@include mq('tablet')
+		width: 100%
+		margin-right: 1rem
+.footer__top-contacts
+	margin-left: 100px
+	@include mq('tablet-wide')
+		margin-left: 60px
+	@include mq('tablet')
+		margin-left: 1rem
+		margin-right: 1rem
+		width: 100%
+.footer__top-right-block
+	@include row-start
+	flex-direction: column
+	width: 320px
+	margin-right: 1rem
+	@include mq('tablet')
+		width: 100%
+		margin: 0 1rem
+		text-align: center
+	form
+		label
+			display: block
+			position: relative
+		input
+			height: 2.8em
+			border: 1px solid $very_light_grey
+			border-radius: 1.4em
+			padding: 0 5%
+			@include mq('tablet')
+				width: 100%
+				margin: .5rem 0
+				text-align: center
+		input[type=text]
+			background: transparent
+			color: $very_light_grey
+		input[type=submit]
+			text-transform: uppercase
+			margin-left: 5px
+			@include mq('tablet')
+				margin-left: 0
+.footer__top-subscribe
+	h5
+		border: none
+		margin-bottom: 1rem
+		span
+			display: block
+			font-size: 1rem
+			color: $very_light_grey
+		@include mq('tablet')
+			&:after
+				display: none
+.footer__top-social
+	position: relative
+	top: 5rem
+	@include row-start
+	@include mq('tablet')
+		@include row-center
+		top: 0
+		margin: 2rem 0
+	a
+		background: $very_light_grey
+		color: $night_rider
+		border-radius: 50%
+		display: flex
+		text-align: center
+		margin-right: 6%
+		transition: all .3s
+		@include mq('tablet')
+			margin-right: 1rem
+			&:last-child
+				margin-right: 0
+		&:hover
+			color: $white
+		&:nth-child(1),&:nth-child(3)
+			&:hover
+				background: $pacific_blue
+		&:nth-child(4),&:nth-child(5)
+			&:hover
+				background: $fire_brick
+		&:nth-child(2)
+			&:hover
+				background: #4267b2
+		&:nth-child(6)
+			&:hover
+				background: #000
+		i
+			font-size: 1.33rem
+			line-height: 2.5rem
+			width: 2.5rem
+.checkbox
+	display: none
+.checkbox-custom
+	width: 20px
+	height: 20px
+	&:before
+		content: '\E720'
+		position: absolute
+		width: 20px
+		height: 20px
+		font-family: iconfont
+		font-size: 1.8rem
+.label
+	position: absolute
+	left: 30px
+	top: 0.7rem
+	@include mq('tablet')
+		position: relative
+		left: inherit
+		margin: 0 30px
+.checkbox:checked + .checkbox-custom::before
+	content: "\E722"
+	display: block
+	position: absolute
+	font-family: iconfont
+	font-size: 1.8rem
+	top: 0
+	left: 0
+.footer__bottom
+	background-color: #000
+	a
+		color: #767676
+		position: relative
+		@include mq('tablet')
+			display: none
+		i
+			font-size: 4rem
+		&:nth-child(1)
+			width: 160px
+			@include mq('tablet')
+				display: block
+				width: 100%
+				text-align: center
+				&:after
+					display: none
+			&:after
+				position: absolute;
+				content: ""
+				width: 1px
+				height: 4rem
+				background: #767676
+				right: 0
+				top: 50%
+				transform: translateY(-50%)
+			&:hover
+				color: $white
+		&:nth-child(2),&:nth-child(3)
+			&:hover
+				color: $pacific_blue
+		&:nth-child(4)
+			&:hover
+				color: $light_sea_green
+		&:nth-child(5)
+			&:hover
+				color: $fire_brick
+		&:nth-child(6)
+			&:hover
+				color: $tangerine
+.footer__bottom-logo
+	@include row-around
+.footer__bottom-copy
+	text-align: center
+	p
+		margin: 0
+		color: #767676
+		padding-bottom: 3rem
+.scroll__top
+	position: fixed
+	z-index: 8
+	right: 1rem
+	bottom: 3rem
+	background: rgba(0,0,0,.8)
+	width: 2.8rem
+	text-align: center
+	color: #898989
+	transition: .2s
+	border-radius: .2em
+	display: inline-block
+	opacity: 0
+	pointer-events: none
+	&:hover
+		background: $pacific_blue
+		i
+			color: $white
+	i
+		font-size: 2em
+		line-height: 2.8rem
+		color: #767676
+.scroll_visible
+	opacity: 1
+	pointer-events: auto
+.popup
+	display: none
+	border-radius: .5rem
+	padding: 2rem
+	min-width: 200px
+	form
+		input
+			display: block
+			height: 3.2rem
+			border: 1px solid #e1e1e1
+			padding: 0 1.2rem
+			border-radius: 1.6rem
+			width: 100%
+		input[type=button]
+			background: #595959
+			border: none
+			color: $white
+			margin: 0 auto
+			width: auto
+			cursor: pointer
+	.title__form
+		text-align: center
+.ie
+	.footer__top-social
+		a
+			height: 30px
+			width: 30px
+			display: inline-block
+	.footer__bottom-logo
+		display: block
+		width: 100%
+		text-align: center
+		a
+			display: inline-block
+			margin: 0 30px
+	.quantity 
+		input[type=number]
+			display: inline-block
+	.header__bottom-logo
+		a
+			margin: 0 1rem
+	.news__main-page-text
+		display: inline-block
+	.contacts__block
+		form
+			input,textarea
+				background-color: $white
+				opacity: 1 !important
+				height: auto!important
+				padding: 1rem!important
+				display: inline-block
+	.contacts__block
+		form
+			p:nth-child(5)
+				input
+					padding: 0!important
+	.banners__wrap
+		.banners__block:nth-child(2)
+			position: absolute
+			right: 0
+			top: 0
+		.banners__block:nth-child(3)
+			position: absolute
+			left: 0
+			top: 312px
+		.banners__block:nth-child(4)
+			position: absolute
+			right: 0
+			top: 600px

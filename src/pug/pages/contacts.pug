@@ -1,0 +1,21 @@
+extends ../layout/main
+
+block content
+	div.categories__wrap.careers__wrap
+		div.categories__description
+			img(src="static/img/cont-1.jpg", alt="")
+		h1 Contact Us
+		p Whatever your question, we’re here to help.
+		.container.contacts
+			.contacts__block
+				form(action="")
+					p
+						input(type="text" placeholder="Введите имя")
+					p
+						input(type="tel" placeholder="Введите телефон")
+					p
+						input(type="email" placeholder="Введите e-mail")
+					p
+						textarea(placeholder="Введите сообщение")
+					p
+						input(type="submit")

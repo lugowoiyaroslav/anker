@@ -1,0 +1,23 @@
+extends ../layout/main
+
+block content
+	div.auth__wrap
+		div.auth__wrap-block
+			div.auth__wrap-block-img
+				img(src="/static/img/l-1.jpg", alt="")
+			div.auth__wrap-block-form
+				h2 Авторизация
+				form(class="woocommerce-form woocommerce-form-login login" action="")
+					p
+						label Имя пользователя или email
+						span.required *
+						input(type="text")
+					p
+						label Пароль
+						span.required *
+						input(type="password")
+					p
+						<button type="submit" class="woocommerce-Button button" name="login" value="Войти">Войти</button>
+						<label class="woocommerce-form__label woocommerce-form__label-for-checkbox inline"><input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever"> <span>Запомнить меня</span></label>
+					<p class="woocommerce-LostPassword lost_password"><a href="http://anker.loc/my-account/lost-password/">Забыли свой пароль?</a></p>
+

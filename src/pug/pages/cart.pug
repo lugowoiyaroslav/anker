@@ -1,0 +1,56 @@
+extends ../layout/main
+
+block content
+	div.profile__wrap.cart__wrap
+		img(src="static/img/cart-1.jpg", alt="")
+		.cart__wrap-link
+			.container
+				a(class="active" href="#") Корзина
+					span 1
+				a(href="#") Заказы
+				a(class="disable" href="#") Адреса
+				a(class="disable" href="#") Возвраты
+	div.cart__content.container
+		h1 Корзина
+		table
+			tbody
+				tr
+					td 
+						div.cart__img
+							a(href="#")
+								img(src="static/img/cart-3.jpg", alt="")
+						div.cart__description
+							p.cart__name PowerCore 5000
+							p.cart__price Price: $17.99
+							p.cart__attr Color: Black
+					td
+						div.products__quantity
+							div.quantity.buttons_added
+								<input type="button" value="-" class="minus">
+								<input type="number" step="1" min="1" max="" name="quantity" value="1" title="Кол-во" class="input-text qty text" size="4" pattern="[0-9]*" inputmode="numeric">
+								<input type="button" value="+" class="plus">
+						a(href="#")
+							i.iconfont.remove &#59028
+				tr
+					td 
+						div.cart__img
+							a(href="#")
+								img(src="static/img/cart-3.jpg", alt="")
+						div.cart__description
+							p.cart__name PowerCore 5000
+							p.cart__price Price: $17.99
+							p.cart__attr Color: Black
+					td
+						div.products__quantity
+							div.quantity.buttons_added
+								<input type="button" value="-" class="minus">
+								<input type="number" step="1" min="1" max="" name="quantity" value="1" title="Кол-во" class="input-text qty text" size="4" pattern="[0-9]*" inputmode="numeric">
+								<input type="button" value="+" class="plus">
+						a(href="#")
+							i.iconfont.remove &#59028
+		div.button__checkout
+			a(href="#")
+				span.price $17.99
+				span.line |
+				| Заказать
+			p.delivery Free Shipping: Delivery to your door is on us for any order of $28 or above.
